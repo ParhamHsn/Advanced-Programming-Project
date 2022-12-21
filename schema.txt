@@ -1,31 +1,14 @@
-Users
-username CHAR(200)
-nationalcode UNIQUE CHAR(12)
+User
+username UNIQUE CHAR(200)
 password CHAR(64)
-phone CHAR(12)
-email UNIQUE CHAR(200)
+joined_at TIMESTAMP
 
-BankAccounts
-nationalcode CHAR(12)
-alias UNIQUE CHAR(10)
-password CHAR(20)
-money INTEGER
-accountNumber UNIQUE CHAR(10)
+Sendmoney
+from UNIQUE CHAR(200)
+to UNIQUE CHAR(200)
+value INT(100)
 
-CommonAccounts
-nationalcode CHAR(12)
-accountNumber UNIQUE CHAR(10)
-alias UNIQUE CHAR(10)
-
-Transactions
-From CHAR(10)
-To CHAR(10)
-MoneyTransfer INTEGER
-
-Loan
-nationalcode CHAR(12)
-accountNumber UNIQUE CHAR(10)
-money INTEGER
-repeat INTEGER
-paymentPeriod INTEGER
-monthlyPayment INTEGER
+Data
+Gender BOOLEAN
+Salary INTEGER
+Age INTEGER
