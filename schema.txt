@@ -1,0 +1,31 @@
+Users
+username CHAR(200)
+nationalcode UNIQUE CHAR(12)
+password CHAR(64)
+phone CHAR(12)
+email UNIQUE CHAR(200)
+
+BankAccounts
+nationalcode CHAR(12)
+alias UNIQUE CHAR(10)
+password CHAR(20)
+money INTEGER
+accountNumber UNIQUE CHAR(10)
+
+CommonAccounts
+nationalcode CHAR(12)
+accountNumber UNIQUE CHAR(10)
+alias UNIQUE CHAR(10)
+
+Transactions
+From CHAR(10)
+To CHAR(10)
+MoneyTransfer INTEGER
+
+Loan
+nationalcode CHAR(12)
+accountNumber UNIQUE CHAR(10)
+money INTEGER
+repeat INTEGER
+paymentPeriod INTEGER
+monthlyPayment INTEGER
